@@ -1,0 +1,21 @@
+language: java
+jdk: oraclejdk8
+sudo: false
+
+notifications:
+  email: false
+
+env:
+  global:
+    - MY_VAR1=1
+    - MY_VAR2=2
+
+install:
+  export MY_VAR2=22
+
+script:
+  - echo "$MY_VAR1, $MY_VAR2"
+
+
+
+
